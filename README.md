@@ -30,6 +30,7 @@ flowchart TD
 - **未コミットのまま放置しない** — こまめにpushしてGitHubに押し出せば、可視化の仕組みを自作せずに済む
 
 詳細は [docs/architecture.md](docs/architecture.md) を参照。
+Dockerによる隔離の仕組みと設定は [docs/docker-isolation.md](docs/docker-isolation.md) にまとめている。
 
 ## 構成
 
@@ -49,7 +50,8 @@ flowchart TD
 deskless/
 ├── README.md
 ├── docs/
-│   └── architecture.md      # 構成の詳細・設計判断の記録
+│   ├── architecture.md      # 構成の詳細・設計判断の記録
+│   └── docker-isolation.md  # Dockerによる隔離の仕組みと設定
 ├── wsl/                     # wsl.conf / .wslconfig
 ├── systemd/                 # tmuxセッションとエージェントの自動起動
 ├── scripts/                 # セットアップ・復帰用スクリプト
